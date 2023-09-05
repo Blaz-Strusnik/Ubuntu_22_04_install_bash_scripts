@@ -36,7 +36,7 @@ chmod +x Anaconda3-2022.10-Linux-x86_64.sh
 ./Anaconda3-2022.10-Linux-x86_64.sh
 mkdir /home/blaz/Documents/Projects
 mkdir /home/blaz/Documents/v_environment
-# sudo apt install postgresql postgresql-contrib
+sudo apt install postgresql postgresql-contrib
 sudo docker version
 nvm --version
 gh --version
