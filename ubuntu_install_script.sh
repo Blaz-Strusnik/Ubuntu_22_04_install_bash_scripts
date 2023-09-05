@@ -24,6 +24,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 apt-cache policy docker-ce
 sudo apt install docker-ce
 sudo systemctl status docker
+sudo apt install postgresql postgresql-contrib
 curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
 sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 
@@ -36,7 +37,6 @@ chmod +x Anaconda3-2022.10-Linux-x86_64.sh
 ./Anaconda3-2022.10-Linux-x86_64.sh
 mkdir /home/blaz/Documents/Projects
 mkdir /home/blaz/Documents/v_environment
-sudo apt install postgresql postgresql-contrib
 sudo docker version
 nvm --version
 gh --version
