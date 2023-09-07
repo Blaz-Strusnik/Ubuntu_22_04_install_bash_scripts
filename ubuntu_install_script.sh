@@ -59,7 +59,6 @@ make -j 12
 sudo make altinstall
 python3.9 --version
 sudo apt install python3-venv -y
-mkdir cd ~/Documents/v_environment/
 cd ~/Documents/v_environment/
 python3.9 -m venv "newenv"
 source ~/Documents/v_environment/newenv/bin/activate
