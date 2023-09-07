@@ -26,15 +26,7 @@ sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce
 sudo systemctl status docker
-mkdir -p ~/.docker/cli-plugins/
-curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
-sudo apt update
-chmod +x ~/.docker/cli-plugins/docker-compose
-sudo apt update
-sudo gpasswd -a $USER docker
-newgrp docker
-sudo apt update
-sudo su $USER
+sudo apt install docker-compose
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
