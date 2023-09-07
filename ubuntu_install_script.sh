@@ -42,11 +42,9 @@ chmod +x Anaconda3-2022.10-Linux-x86_64.sh
 mkdir /home/blaz/Documents/Projects
 mkdir /home/blaz/Documents/v_environment
 sudo docker version
-nvm --version
 gh --version
 code --version
 mysql -V
-node -v
 docker compose version
 # sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 # sudo apt update
