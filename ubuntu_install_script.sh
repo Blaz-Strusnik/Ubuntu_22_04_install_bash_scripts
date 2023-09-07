@@ -45,7 +45,7 @@ sudo docker version
 gh --version
 code --version
 mysql -V
-docker compose version
+docker-compose version
 # sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 # sudo apt update
 # cd ~/Documents
